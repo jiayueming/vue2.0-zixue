@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>swiper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        .swiper-container {
+            background: red;
+        }
+        .swiper-wrapper {
+            padding: 0;
+            margin: 0;
+            height: 44px;
+        }
+        .swiper-wrapper li{
+            list-style: none;
+            width: 30%;
+            height: 100%;
+            line-height: 44px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide">我的</li>
+        <li class="swiper-slide">购物</li>
+        <li class="swiper-slide">旅游</li>
+        <li class="swiper-slide">住宿</li>
+        <li class="swiper-slide">美食</li>
+        <li class="swiper-slide">化妆</li>
+        <li class="swiper-slide">健身</li>
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var swiper = new Swiper('.swiper-container',{
+            slidesPerView: 'auto',
+            paginationClickable: true,
+            freeMode: true
+        });
+    }
+</script>
+</body>
+</html>
